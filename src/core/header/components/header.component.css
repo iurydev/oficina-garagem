@@ -1,0 +1,5 @@
+.wrapper {
+    flex-direction: column-reverse;
+    display: flex;
+    align-items: center;
+}

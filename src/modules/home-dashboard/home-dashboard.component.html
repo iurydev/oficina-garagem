@@ -1,0 +1,109 @@
+<section class="content">
+    <div class="container-fluid" id="container" style="overflow: auto;">
+
+        <div class="row" style="z-index: 1;height: 250px;width: 100%;position: absolute;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <img class="img-responsive" style="max-height: 250px;" src="/assets/logo-lateral-direita.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <img class="img-responsive" style="max-height: 250px; float: right;" src="/assets/logo-lateral-esquerda.png">
+            </div>
+        </div>
+
+        <div class="row" style="z-index: 1;height: 250px;width: 100%;position: absolute; top: 50%;">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <img class="img-responsive" style="max-height: 250px;" src="/assets/logo-lateral-direita.png">
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                <img class="img-responsive" style="max-height: 250px; float: right;" src="/assets/logo-lateral-esquerda.png">
+            </div>
+        </div>
+
+
+        <div class="row" id="modulos">
+
+            <section class="col-lg-8">
+
+                <div class="card bg-dark text white">
+                    <div class="card-header">
+                        <h4 class="card-title">
+                            Páginas disponíveis
+                        </h4>
+                        <div class="card-tools">
+                            <button type="button" id="btn-minimizar" class="btn btn-tool" data-card-widget="collapse"> <i class="fas fa-minus"></i> </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-lg-3 col-6">
+
+                                    <div class="small-box bg-info" [routerLink]="['' , 'produtos']" (click)="seleciona_modulo()">
+                                        <div class="inner" id="centralizar-itens">
+                                            <h4>Produtos</h4>
+                                        </div>
+                                        <div class="icon" id="centralizar-itens">
+                                            <img src="assets/logo-loja.png">
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-3 col-6">
+                                    <div class="small-box bg-success" [routerLink]="['', 'servicos']" (click)="seleciona_modulo()">
+                                        <div class="inner" id="centralizar-itens">
+                                            <h4>Serviços</h4>
+                                        </div>
+                                        <div class="icon" id="centralizar-itens">
+                                            <img src="assets/logo-servicos.png">
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-6">
+
+                                    <div class="small-box bg-warning" [routerLink]="['', 'equipe']" (click)="seleciona_modulo()">
+                                        <div class="inner" id="centralizar-itens">
+                                            <h4>Equipe</h4>
+                                        </div>
+                                        <div class="icon" id="centralizar-itens">
+                                            <img src="assets/logo-equipe.png">
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3 col-6">
+
+                                    <div class="small-box bg-danger" [routerLink]="['', 'cliente']" (click)="seleciona_modulo()">
+                                        <div class="inner" id="centralizar-itens">
+                                            <h4>Cliente</h4>
+                                        </div>
+                                        <div class="icon" id="centralizar-itens">
+                                            <img src="assets/logo-cliente.png">
+                                        </div>
+                                        <br>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row" id="centralizar-itens">
+            <section class="col-lg-8">
+
+                <router-outlet>
+                </router-outlet>
+            </section>
+        </div>
+
+    </div>
+</section>

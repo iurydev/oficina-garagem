@@ -1,0 +1,36 @@
+#container {
+    height: calc(100vh - 80px);
+    background-color: black;
+}
+
+#centralizar-itens {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+#modulos {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+#modulo-selecionado {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#img-background {
+    position: fixed;
+    z-index: 1;
+}

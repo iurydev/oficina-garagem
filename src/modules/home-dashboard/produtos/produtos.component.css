@@ -1,0 +1,11 @@
+.content {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.img img {
+    max-width: 300px;
+    max-height: 300px;
+}

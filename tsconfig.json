@@ -1,6 +1,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "skipLibCheck": true, // Termina: solução temporária bug ng build --prod
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
