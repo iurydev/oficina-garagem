@@ -1,0 +1,30 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">Administrativo &nbsp; <i class="fas fa-caret-right"></i></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarAdministrativo"
+    aria-controls="navbarAdministrativo" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarAdministrativo">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a (click)="AlteraCorItem('relatorios')" class="nav-link" routerLink="relatorio-geral">Relatórios &nbsp; <i
+            id="relatorios" class="fas fa-circle-notch"></i></a>
+      </li>
+
+      <li class="nav-item">
+        <a (click)="AlteraCorItem('servicos')" class="nav-link" routerLink="servicos">Serviços &nbsp; <i id="servicos"
+            class="fas fa-circle-notch"></i></a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+<br>
+<div class="content">
+  <div class="container-fluid">
+    <router-outlet></router-outlet>
+  </div>
+</div>

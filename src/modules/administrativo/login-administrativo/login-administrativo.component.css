@@ -1,0 +1,19 @@
+.container {
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+  .card {
+  width: 300px;
+  height: 300px;
+  background: #fff;
+  border-top-color: #FF4500;
+  }
+
+
+  #button-login {
+    width: 100%;
+  }

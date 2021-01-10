@@ -8,6 +8,11 @@ const routes: Routes = [
     loadChildren: '../modules/home-dashboard/home-dashboard.module#HomeDashboardModule',
 
   },
+  {
+    path: 'administrativo',
+    loadChildren: '../modules/administrativo/administrativo.module#AdministrativoModule'
+
+  },
 ];
 
 @NgModule({
