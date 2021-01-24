@@ -1,6 +1,9 @@
+
 #container {
-    height: calc(100vh - 100px);
-    background-color: black;
+  /* solução para problema de altura ! */
+  height: calc(100vh - 76px);
+  overflow: auto;
+  background-color: black;
 }
 
 #centralizar-itens {
@@ -11,6 +14,15 @@
     cursor: pointer;
     position: relative;
     z-index: 2;
+}
+
+#centralizar-modulos {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 2;
 }
 
 #modulos {
